@@ -1,0 +1,240 @@
+@import "variables";
+@import "avenir";
+@import "avenir-next";
+
+@import "../../../node_modules/bootstrap/scss/_functions";
+@import "../../../node_modules/bootstrap/scss/_variables";
+@import "../../../node_modules/bootstrap/scss/_mixins";
+@import "../../../node_modules/bootstrap/scss/_root";
+@import "../../../node_modules/bootstrap/scss/_reboot";
+@import "../../../node_modules/bootstrap/scss/_type";
+@import "../../../node_modules/bootstrap/scss/_images";
+@import "../../../node_modules/bootstrap/scss/_code";
+@import "../../../node_modules/bootstrap/scss/_grid";
+@import "../../../node_modules/bootstrap/scss/_tables";
+@import "../../../node_modules/bootstrap/scss/_forms";
+@import "../../../node_modules/bootstrap/scss/_buttons";
+@import "../../../node_modules/bootstrap/scss/_transitions";
+@import "../../../node_modules/bootstrap/scss/_dropdown";
+@import "../../../node_modules/bootstrap/scss/_button-group";
+@import "../../../node_modules/bootstrap/scss/_input-group";
+@import "../../../node_modules/bootstrap/scss/_custom-forms";
+@import "../../../node_modules/bootstrap/scss/_nav";
+@import "../../../node_modules/bootstrap/scss/_navbar";
+@import "../../../node_modules/bootstrap/scss/_card";
+@import "../../../node_modules/bootstrap/scss/_breadcrumb";
+@import "../../../node_modules/bootstrap/scss/_pagination";
+@import "../../../node_modules/bootstrap/scss/_badge";
+@import "../../../node_modules/bootstrap/scss/_jumbotron";
+@import "../../../node_modules/bootstrap/scss/_alert";
+@import "../../../node_modules/bootstrap/scss/_progress";
+@import "../../../node_modules/bootstrap/scss/_media";
+@import "../../../node_modules/bootstrap/scss/_list-group";
+@import "../../../node_modules/bootstrap/scss/_close";
+@import "../../../node_modules/bootstrap/scss/_toasts";
+@import "../../../node_modules/bootstrap/scss/_modal";
+@import "../../../node_modules/bootstrap/scss/_tooltip";
+@import "../../../node_modules/bootstrap/scss/_popover";
+@import "../../../node_modules/bootstrap/scss/_carousel";
+@import "../../../node_modules/bootstrap/scss/_spinners";
+@import "../../../node_modules/bootstrap/scss/_utilities";
+@import "../../../node_modules/bootstrap/scss/_print";
+
+body,
+html {
+	height: 100%;
+}
+
+body {
+  font-family: "Avenir Next Cyr";
+  font-style: normal;
+  line-height: normal;
+  font-size: 18px;
+}
+
+.container {
+  width: 1400px;
+}
+
+nav {
+  height: 80px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.22);
+  font-size: 20px;
+
+  .nav-item {
+    &:not(:last-child) {
+      padding-right: 50px;
+    }
+    
+  }
+  .brand {
+    font-family: "Avenir LT 65";
+    color: $black;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+h1.title {
+  font-size: 40px;
+  line-height: 1.75;
+  font-weight: bold;
+  font-family: "Avenir LT 65"; 
+}
+
+ul {
+  padding: 0;
+
+  li {
+    list-style: none;
+    line-height: 32px;
+
+    span {
+      margin-right: 15px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+}
+
+.store-link {
+  padding-left: 33px;
+  padding-right: 33px;
+}
+
+.clarity {
+  opacity:0.7;
+  filter:alpha(opacity=70);   
+  cursor: pointer;
+  transition: all 0.4s; 
+
+  &:hover {
+    transition: all 0.4s; 
+    opacity:1;
+    filter:alpha(opacity=100);  
+    transform: scale(1.05);
+  }
+}
+
+.durak-area {
+  .outer-container {
+    background: rgba(255,247,234,1);
+    background: linear-gradient(to bottom, rgba(255,247,234,1) 0%, rgba(255,224,171,1) 39%, rgba(254,221,164,1) 55%, rgba(247,190,97,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff7ea', endColorstr='#f7be61', GradientType=0 );
+    height: 1112px;
+    overflow: hidden;
+
+    .container {
+      margin-top: 40px;
+      margin-bottom: 45px;
+      text-align: center;
+    }
+
+    .screens {
+      margin-top: 35px;
+
+      > div {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+    }
+
+    .screen {
+      position: relative;
+      top: 0;
+		  left: 0;
+      height: 641px;
+      width: 327px;
+      > img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+    }
+  } 
+}
+
+.joker-area {
+  .outer-container {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    background: rgba(88,210,129,1);
+    background: linear-gradient(to bottom, rgba(88,210,129,1) 0%, rgba(150,201,133,1) 62%, rgba(130,219,147,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58d281', endColorstr='#82db93', GradientType=0 );
+    height: 960px;
+    overflow: hidden;
+  }
+
+  .container {
+    margin-top: 40px;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+
+  .mt-75 {
+    margin-top: 75px;
+  }
+
+  .screens {
+    margin-top: 80px;
+
+    > div {
+      padding-left: 22px;
+      padding-right: 22px;
+    }
+  }
+
+  .screen {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 279px;
+    width: 559px;
+    > img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+}
+
+footer {
+  color: $white;
+
+  .inner {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
+
+  .f-top {
+    height: 153px;
+    background-color: #353742;
+  }
+
+  .f-bottom {
+    text-align: center;
+    height: 135px;
+    background-color: #242732;
+
+    > div:first-child {
+      line-height: 90px;
+      font-family: 'Raleway', sans-serif;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 24px;
+    }
+
+    > div:last-child {
+      font-size: 16px;
+    }
+  }
+}
