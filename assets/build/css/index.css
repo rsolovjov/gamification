@@ -7210,7 +7210,7 @@ body {
   font-family: "Avenir Next Cyr";
   font-style: normal;
   line-height: normal;
-  font-size: 18px; }
+  font-size: 16px; }
 
 nav {
   height: 80px;
@@ -7226,8 +7226,8 @@ nav {
       text-decoration: none; }
 
 h1.title {
-  font-weight: bold;
-  font-family: "Avenir LT 65"; }
+  font-weight: 900;
+  font-family: "Avenir LT 55 Roman"; }
   @media (min-width: 768px) {
     h1.title {
       font-size: 40px;
@@ -7275,6 +7275,9 @@ ul {
     filter: alpha(opacity=100);
     transform: scale(1.05); }
 
+.durak-area .store-links, .joker-area .store-links {
+  margin-top: 50px; }
+
 .durak-area .outer-container {
   background: #fff7ea;
   background: linear-gradient(to bottom, #fff7ea 0%, #ffe0ab 39%, #fedda4 55%, #f7be61 100%);
@@ -7282,7 +7285,7 @@ ul {
   overflow: hidden; }
   .durak-area .outer-container .container {
     margin-top: 40px;
-    margin-bottom: 45px; }
+    margin-bottom: 55px; }
   @media (min-width: 768px) {
     .durak-area .outer-container .icon-block {
       width: 95px;
@@ -7295,15 +7298,39 @@ ul {
       background-image: url(../img/durak-sm.png); } }
   @media (max-width: 767.98px) {
     .durak-area .outer-container .screens {
-      margin-top: 24px; } }
+      margin-top: 40px; } }
   @media (min-width: 768px) {
     .durak-area .outer-container .screens {
       margin-top: 35px; } }
   .durak-area .outer-container .screens > div {
     padding-left: 22px;
     padding-right: 22px; }
-  .durak-area .outer-container .player {
-    border-radius: 42px; }
+  .durak-area .outer-container .desc {
+    margin-top: 50px; }
+  .durak-area .outer-container .screen {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url(../img/back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    border-radius: 20px; }
+    .durak-area .outer-container .screen .mockup {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%); }
+      @media (max-width: 1199.98px) {
+        .durak-area .outer-container .screen .mockup {
+          width: 91%;
+          height: 106%; } }
+      @media (min-width: 1200px) {
+        .durak-area .outer-container .screen .mockup {
+          width: 96%;
+          height: 106%; } }
+    .durak-area .outer-container .screen .img-rounded {
+      border-radius: 20px; }
 
 .joker-area .outer-container {
   margin-top: 32px;
@@ -7315,7 +7342,7 @@ ul {
 
 .joker-area .container {
   margin-top: 40px;
-  margin-bottom: 45px;
+  margin-bottom: 55px;
   text-align: center; }
 
 @media (min-width: 768px) {
@@ -7330,7 +7357,7 @@ ul {
     height: 72px;
     background-image: url(../img/joker-sm.png); } }
 
-.joker-area .mt-75 {
+.joker-area .desc {
   margin-top: 75px; }
 
 @media (max-width: 767.98px) {
@@ -7344,6 +7371,33 @@ ul {
 .joker-area .screens > div {
   padding-left: 22px;
   padding-right: 22px; }
+
+.joker-area .screen {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0 3%;
+  background-image: url(../img/4-tmun-qz-3-uq-0-copy.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center; }
+  .joker-area .screen .mockup {
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translateX(-50%) translateY(-50%); }
+    @media (max-width: 1199.98px) {
+      .joker-area .screen .mockup {
+        width: 112%;
+        height: 115%; } }
+    @media (max-width: 991.98px) {
+      .joker-area .screen .mockup {
+        width: 116%;
+        height: 115%; } }
+    @media (min-width: 1200px) {
+      .joker-area .screen .mockup {
+        width: 115%;
+        height: 115%; } }
 
 footer {
   color: #fff; }

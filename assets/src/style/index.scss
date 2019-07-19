@@ -49,7 +49,7 @@ body {
   font-family: "Avenir Next Cyr";
   font-style: normal;
   line-height: normal;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 nav {
@@ -71,8 +71,8 @@ nav {
 }
 
 h1.title {
-  font-weight: bold;
-  font-family: "Avenir LT 65"; 
+  font-weight: 900;
+  font-family: "Avenir LT 55 Roman"; 
 
   @include media-breakpoint-up(md) { 
     font-size: 40px;
@@ -108,7 +108,6 @@ ul {
 }
 
 .store-link {
-
   @include media-breakpoint-up(lg) { 
     padding-left: 33px;
     padding-right: 33px;
@@ -133,6 +132,11 @@ ul {
   }
 }
 
+.durak-area, .joker-area {
+  .store-links {
+    margin-top: 50px;
+  }
+}
 .durak-area {
   .outer-container {
     background: rgba(255,247,234,1);
@@ -142,7 +146,7 @@ ul {
 
     .container {
       margin-top: 40px;
-      margin-bottom: 45px;
+      margin-bottom: 55px;
     }
 
     .icon-block {
@@ -159,9 +163,8 @@ ul {
     }
 
     .screens {
-      
       @include media-breakpoint-down(sm) { 
-        margin-top: 24px;
+        margin-top: 40px;
       }  
   
       @include media-breakpoint-up(md) { 
@@ -174,8 +177,40 @@ ul {
       }
     }
 
-    .player {
-      border-radius: 42px;
+    .desc {
+      margin-top: 50px;
+    }
+
+    .screen {
+      position: relative;
+      top: 0;
+		  left: 0;
+      background-image: url(../img/back.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position-x: center;
+      border-radius: 20px;
+
+      .mockup {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);    
+
+        @include media-breakpoint-down(lg) { 
+            width: 91%;
+            height: 106%;
+        }
+
+        @include media-breakpoint-up(xl) { 
+          width: 96%;
+          height: 106%;
+        }
+      }
+
+      .img-rounded {
+        border-radius: 20px;
+      }
     }
   } 
 }
@@ -192,7 +227,7 @@ ul {
 
   .container {
     margin-top: 40px;
-    margin-bottom: 45px;
+    margin-bottom: 55px;
     text-align: center;
   }
 
@@ -209,7 +244,7 @@ ul {
     }
   }
 
-  .mt-75 {
+  .desc {
     margin-top: 75px;
   }
 
@@ -227,6 +262,40 @@ ul {
       padding-right: 22px;
     }
   }
+
+  .screen {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 3%;
+    background-image: url(../img/4-tmun-qz-3-uq-0-copy.png);
+    background-repeat: no-repeat;1
+    background-size: contain;
+    background-position-x: center;
+
+    .mockup {
+      position: absolute;
+      top: 50%;
+      left: 51%;
+      transform: translateX(-50%) translateY(-50%);    
+
+      @include media-breakpoint-down(lg) { 
+        width: 112%;
+        height: 115%;
+      }
+
+      @include media-breakpoint-down(md) { 
+        width: 116%;
+        height: 115%;
+      }
+
+      @include media-breakpoint-up(xl) { 
+        width: 115%;
+        height: 115%;
+      }
+    }
+  }
+
 }
 
 footer {
