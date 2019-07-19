@@ -7414,7 +7414,8 @@ footer {
           list-style: disc inside; } }
   footer .f-top {
     height: 153px;
-    background-color: #353742; }
+    background-color: #353742;
+    font-size: 18px; }
   footer .f-bottom {
     text-align: center;
     height: 135px;
