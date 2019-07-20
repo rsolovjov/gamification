@@ -7304,9 +7304,19 @@ ul {
       margin-top: 35px; } }
   .durak-area .outer-container .screens > div {
     padding-left: 22px;
-    padding-right: 22px; }
+    padding-right: 22px;
+    position: relative; }
   .durak-area .outer-container .desc {
     margin-top: 50px; }
+  .durak-area .outer-container .screen-shadow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; }
+    .durak-area .outer-container .screen-shadow.odd {
+      bottom: -54px; }
+    .durak-area .outer-container .screen-shadow.even {
+      bottom: -40px; }
   .durak-area .outer-container .screen {
     position: relative;
     top: 0;
@@ -7324,6 +7334,10 @@ ul {
       @media (max-width: 1199.98px) {
         .durak-area .outer-container .screen .mockup {
           width: 91%;
+          height: 106%; } }
+      @media (max-width: 991.98px) {
+        .durak-area .outer-container .screen .mockup {
+          width: 99%;
           height: 106%; } }
       @media (min-width: 1200px) {
         .durak-area .outer-container .screen .mockup {
@@ -7360,6 +7374,19 @@ ul {
 .joker-area .desc {
   margin-top: 75px; }
 
+.joker-area .screen-pic {
+  width: 100%;
+  margin-top: 50px;
+  left: 2%;
+  position: relative; }
+
+.joker-area .screen-shadow {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; }
+
 @media (max-width: 767.98px) {
   .joker-area .screens {
     margin-top: 40px; } }
@@ -7370,7 +7397,8 @@ ul {
 
 .joker-area .screens > div {
   padding-left: 22px;
-  padding-right: 22px; }
+  padding-right: 22px;
+  position: relative; }
 
 .joker-area .screen {
   position: relative;
@@ -7393,6 +7421,10 @@ ul {
     @media (max-width: 991.98px) {
       .joker-area .screen .mockup {
         width: 116%;
+        height: 115%; } }
+    @media (max-width: 767.98px) {
+      .joker-area .screen .mockup {
+        width: 115%;
         height: 115%; } }
     @media (min-width: 1200px) {
       .joker-area .screen .mockup {
