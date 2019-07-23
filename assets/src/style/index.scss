@@ -73,6 +73,7 @@ nav {
 h1.title {
   font-weight: 900;
   font-family: "Avenir LT 55 Roman"; 
+  margin-top: 10px;
 
   @include media-breakpoint-up(md) { 
     font-size: 40px;
@@ -86,21 +87,6 @@ h1.title {
   }
 }
 
-ul {
-  padding: 0;
-
-  li {
-    list-style: none;
-    line-height: 32px;
-
-    span {
-      margin-right: 15px;
-      font-size: 24px;
-      font-weight: bold;
-    }
-  }
-}
-
 .icon-block {
   background-position: center center;
   background-repeat: no-repeat;
@@ -109,12 +95,11 @@ ul {
 
 .store-link {
   @include media-breakpoint-up(lg) { 
-    padding-left: 33px;
-    padding-right: 33px;
+    padding-left: 42px;
+    padding-right: 42px;
   }
   @include media-breakpoint-down(md) { 
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 5px;
   }
 }
 
@@ -132,11 +117,36 @@ ul {
   }
 }
 
-.durak-area, .joker-area {
+.durak-area {
   .store-links {
-    margin-top: 50px;
+    margin-top: 25px;
   }
 }
+
+.joker-area {
+  .store-links {
+    margin-top: 45px;
+  }
+}
+
+.durak-area, .joker-area {
+  ul {
+    padding: 0;
+
+    li {
+      list-style: none;
+      line-height: 30px;
+
+      span {
+        margin-right: 15px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
 .durak-area {
   .outer-container {
     background: rgba(255,247,234,1);
@@ -147,6 +157,7 @@ ul {
     .container {
       margin-top: 40px;
       margin-bottom: 55px;
+      padding: 0;
     }
 
     .icon-block {
@@ -163,6 +174,7 @@ ul {
     }
 
     .screens {
+      padding: 0;
       @include media-breakpoint-down(sm) { 
         margin-top: 40px;
       }  
@@ -170,16 +182,10 @@ ul {
       @include media-breakpoint-up(md) { 
         margin-top: 35px;
       }
-
-      > div {
-        padding-left: 22px;
-        padding-right: 22px;
-        position: relative;
-      }
     }
 
     .desc {
-      margin-top: 50px;
+      margin-top: 63px;
     }
 
     .screen-shadow {
@@ -207,6 +213,12 @@ ul {
       background-size: contain;
       background-position-x: center;
       border-radius: 20px;
+      text-align: center;
+
+      .img-screen {
+        height: auto;
+        width: 89%;
+      }
 
       .mockup {
         position: absolute;
@@ -215,8 +227,8 @@ ul {
         transform: translateX(-50%) translateY(-50%);    
 
         @include media-breakpoint-down(lg) { 
-            width: 91%;
-            height: 106%;
+          width: 102%;
+          height: 105%;
         }
 
         @include media-breakpoint-down(md) { 
@@ -225,8 +237,8 @@ ul {
         }
 
         @include media-breakpoint-up(xl) { 
-          width: 96%;
-          height: 106%;
+          width: 102%;
+          height: 105%;
         }
       }
 
@@ -248,9 +260,10 @@ ul {
   }
 
   .container {
-    margin-top: 40px;
+    margin-top: 49px;
     margin-bottom: 55px;
     text-align: center;
+    padding: 0;
   }
 
   .icon-block {
@@ -267,7 +280,7 @@ ul {
   }
 
   .desc {
-    margin-top: 75px;
+    margin-top: 85px;
   }
 
   .screen-pic {
@@ -291,16 +304,10 @@ ul {
     }  
 
     @include media-breakpoint-up(md) { 
-      margin-top: 80px;
+      margin-top: 82px;
     }
 
-    > div {
-      padding-left: 22px;
-      padding-right: 22px;
-      position: relative;
-    }
   }
-
   
   .screen {
     position: relative;
@@ -311,6 +318,11 @@ ul {
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: center;
+
+    .img-screen {
+      height: auto;
+      width: 99%;
+    }
 
     .mockup {
       position: absolute;
@@ -334,8 +346,8 @@ ul {
       }
 
       @include media-breakpoint-up(xl) { 
-        width: 115%;
-        height: 115%;
+        width: 126%;
+        height: 113%;
       }
     }
   }
@@ -345,8 +357,9 @@ ul {
 footer {
   color: $white;
 
-  ul.inner {
-    max-width: 1100px;
+  ul {
+    padding: 0;
+    max-width: 1109px;
     margin-left: auto;
     margin-right: auto;
     height: 100%;
