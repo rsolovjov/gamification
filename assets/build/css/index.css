@@ -7298,7 +7298,6 @@ h1 {
   font-weight: 900;
   font-family: "Avenir LT 55 Roman";
   margin: 0;
-  line-height: 1;
   display: block; }
   @media (min-width: 768px) {
     h1 {
@@ -7313,16 +7312,8 @@ h1 {
       vertical-align: middle;
       padding-top: 5px; } }
 
-.icon-block {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain; }
-  @media (min-width: 768px) {
-    .icon-block {
-      margin-bottom: 24px; } }
-  @media (max-width: 767.98px) {
-    .icon-block {
-      margin-bottom: 5px; } }
+.title-flex {
+  height: 68px; }
 
 @media (min-width: 1200px) {
   .store-link {
@@ -7369,16 +7360,6 @@ h1 {
   .durak-area .outer-container .container {
     margin-top: 40px;
     margin-bottom: 55px; }
-  @media (min-width: 768px) {
-    .durak-area .outer-container .icon-block {
-      width: 95px;
-      height: 95px;
-      background-image: url(../img/durak.png); } }
-  @media (max-width: 767.98px) {
-    .durak-area .outer-container .icon-block {
-      width: 72px;
-      height: 72px;
-      background-image: url(../img/durak-sm.png); } }
   .durak-area .outer-container .screens {
     padding: 0; }
     @media (max-width: 767.98px) {
