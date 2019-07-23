@@ -7235,16 +7235,15 @@ nav {
 h1.title {
   font-weight: 900;
   font-family: "Avenir LT 55 Roman";
-  margin-top: 10px; }
+  margin: 0;
+  margin-top: 20px; }
   @media (min-width: 768px) {
     h1.title {
       font-size: 40px;
-      line-height: 1.75;
       text-align: center; } }
   @media (max-width: 767.98px) {
     h1.title {
       font-size: 32px;
-      line-height: 1.06;
       padding-left: 17px; } }
 
 .icon-block {
@@ -7273,7 +7272,7 @@ h1.title {
     transform: scale(1.05); }
 
 .durak-area .store-links {
-  margin-top: 60px; }
+  margin-top: 24px; }
 
 .joker-area .store-links {
   margin-top: 45px; }
@@ -7314,7 +7313,7 @@ h1.title {
         margin-top: 40px; } }
     @media (min-width: 768px) {
       .durak-area .outer-container .screens {
-        margin-top: 35px; } }
+        margin-top: 55px; } }
     .durak-area .outer-container .screens > div {
       position: relative; }
   .durak-area .outer-container .desc {
@@ -7399,7 +7398,7 @@ h1.title {
 
 @media (min-width: 768px) {
   .joker-area .screens {
-    margin-top: 82px; } }
+    margin-top: 100px; } }
 
 .joker-area .screens > div {
   position: relative; }
