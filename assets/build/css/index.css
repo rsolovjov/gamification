@@ -7298,24 +7298,29 @@ h1 {
   font-weight: 900;
   font-family: "Avenir LT 55 Roman";
   margin: 0;
-  line-height: 1; }
+  line-height: 1;
+  display: block; }
   @media (min-width: 768px) {
     h1 {
       font-size: 40px;
-      text-align: center;
-      padding-top: 24px; } }
+      text-align: center; } }
   @media (max-width: 767.98px) {
     h1 {
       font-size: 32px;
       padding-left: 17px;
       float: right;
-      text-align: left;
-      padding-top: 5px; } }
+      text-align: left; } }
 
 .icon-block {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain; }
+  @media (min-width: 768px) {
+    .icon-block {
+      margin-bottom: 24px; } }
+  @media (max-width: 767.98px) {
+    .icon-block {
+      margin-bottom: 5px; } }
 
 @media (min-width: 1200px) {
   .store-link {
