@@ -7277,20 +7277,40 @@ nav {
     nav .brand:hover {
       text-decoration: none; }
 
+.title-block {
+  overflow: hidden; }
+  @media (max-width: 767.98px) {
+    .title-block {
+      max-width: 312px;
+      margin-left: auto;
+      margin-right: auto; } }
+
+@media (min-width: 768px) {
+  .icon-block {
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (max-width: 767.98px) {
+  .icon-block {
+    float: left; } }
+
 h1 {
   font-weight: 900;
   font-family: "Avenir LT 55 Roman";
   margin: 0;
-  padding-top: 24px;
   line-height: 1; }
   @media (min-width: 768px) {
     h1 {
       font-size: 40px;
-      text-align: center; } }
+      text-align: center;
+      padding-top: 24px; } }
   @media (max-width: 767.98px) {
     h1 {
       font-size: 32px;
-      padding-left: 17px; } }
+      padding-left: 17px;
+      float: right;
+      text-align: left;
+      padding-top: 5px; } }
 
 .icon-block {
   background-position: center center;
@@ -7393,7 +7413,7 @@ h1 {
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
       width: 101%;
-      height: 105%; }
+      height: 104%; }
     .durak-area .outer-container .screen .img-rounded {
       border-radius: 20px; }
 

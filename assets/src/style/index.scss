@@ -126,20 +126,45 @@ nav {
   }
 }
 
+.title-block {
+  overflow: hidden;
+
+  @include media-breakpoint-down(sm) { 
+    max-width: 312px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.icon-block {
+  @include media-breakpoint-up(md) { 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include media-breakpoint-down(sm) { 
+    float: left;
+  }
+}
+
 h1 {
   font-weight: 900;
   font-family: "Avenir LT 55 Roman"; 
   margin: 0;
-  padding-top: 24px;
   line-height: 1;
 
   @include media-breakpoint-up(md) { 
     font-size: 40px;
     text-align: center;
+    padding-top: 24px;
   }
+
   @include media-breakpoint-down(sm) { 
     font-size: 32px;
     padding-left: 17px;
+    float: right;
+    text-align: left;
+    padding-top: 5px;
   }
 }
 
@@ -287,7 +312,7 @@ h1 {
         left: 50%;
         transform: translateX(-50%) translateY(-50%);    
         width: 101%;
-        height: 105%;
+        height: 104%;
       }
 
       .img-rounded {
