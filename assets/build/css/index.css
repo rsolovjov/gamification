@@ -7236,7 +7236,8 @@ h1.title {
   font-weight: 900;
   font-family: "Avenir LT 55 Roman";
   margin: 0;
-  margin-top: 20px; }
+  margin-top: 24px;
+  line-height: 1; }
   @media (min-width: 768px) {
     h1.title {
       font-size: 40px;
@@ -7272,7 +7273,7 @@ h1.title {
     transform: scale(1.05); }
 
 .durak-area .store-links {
-  margin-top: 24px; }
+  margin-top: 28px; }
 
 .joker-area .store-links {
   margin-top: 45px; }
@@ -7398,7 +7399,7 @@ h1.title {
 
 @media (min-width: 768px) {
   .joker-area .screens {
-    margin-top: 100px; } }
+    margin-top: 106px; } }
 
 .joker-area .screens > div {
   position: relative; }
