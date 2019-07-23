@@ -377,7 +377,18 @@ h1 {
 
     .img-screen {
       height: auto;
-      width: 99%;
+      
+      @include media-breakpoint-down(lg) { 
+        width: 87%;
+      }
+
+      @include media-breakpoint-down(md) { 
+        width: 90%;
+      }
+
+      @include media-breakpoint-up(xl) { 
+        width: 99%;
+      }
     }
 
     .mockup {

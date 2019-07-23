@@ -7463,8 +7463,16 @@ h1 {
   background-size: contain;
   background-position-x: center; }
   .joker-area .screen .img-screen {
-    height: auto;
-    width: 99%; }
+    height: auto; }
+    @media (max-width: 1399.98px) {
+      .joker-area .screen .img-screen {
+        width: 87%; } }
+    @media (max-width: 1199.98px) {
+      .joker-area .screen .img-screen {
+        width: 90%; } }
+    @media (min-width: 1400px) {
+      .joker-area .screen .img-screen {
+        width: 99%; } }
   .joker-area .screen .mockup {
     position: absolute;
     top: 50%;
