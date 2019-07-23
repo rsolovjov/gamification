@@ -56,6 +56,10 @@ nav {
   height: 80px;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.22);
   font-size: 20px;
+  
+  .contacts-block {
+    width: 68.4%;
+  }
 
   .brand {
     font-family: "Avenir LT 65";
@@ -64,6 +68,10 @@ nav {
     font-weight: 500;
     text-transform: uppercase;
     
+    span {
+      padding-left: 34px;
+    }
+
     &:hover {
       text-decoration: none;
     }
@@ -136,6 +144,7 @@ h1.title {
     li {
       list-style: none;
       line-height: 30px;
+      font-size: 18px;
 
       span {
         margin-right: 15px;
@@ -157,7 +166,6 @@ h1.title {
     .container {
       margin-top: 40px;
       margin-bottom: 55px;
-      padding: 0;
     }
 
     .icon-block {
@@ -181,6 +189,10 @@ h1.title {
   
       @include media-breakpoint-up(md) { 
         margin-top: 35px;
+      }
+
+      > div {
+        position: relative;
       }
     }
 
@@ -227,7 +239,7 @@ h1.title {
         transform: translateX(-50%) translateY(-50%);    
 
         @include media-breakpoint-down(lg) { 
-          width: 102%;
+          width: 101%;
           height: 105%;
         }
 
@@ -237,7 +249,7 @@ h1.title {
         }
 
         @include media-breakpoint-up(xl) { 
-          width: 102%;
+          width: 101%;
           height: 105%;
         }
       }
@@ -263,7 +275,7 @@ h1.title {
     margin-top: 49px;
     margin-bottom: 55px;
     text-align: center;
-    padding: 0;
+    //padding: 0;
   }
 
   .icon-block {
@@ -307,6 +319,9 @@ h1.title {
       margin-top: 82px;
     }
 
+    > div {
+      position: relative;
+    }
   }
   
   .screen {
@@ -363,6 +378,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     height: 100%;
+    list-style: none;
     @include media-breakpoint-down(md) { 
       padding-left: 30px;
 
