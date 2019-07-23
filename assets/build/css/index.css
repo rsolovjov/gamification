@@ -7309,7 +7309,9 @@ h1 {
       font-size: 32px;
       padding-left: 17px;
       float: right;
-      text-align: left; } }
+      text-align: left;
+      vertical-align: middle;
+      padding-top: 5px; } }
 
 .icon-block {
   background-position: center center;
