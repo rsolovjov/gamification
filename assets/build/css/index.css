@@ -7205,6 +7205,49 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 body,
 html {
   height: 100%; }
@@ -7227,6 +7270,8 @@ nav {
     font-size: 24px;
     font-weight: 500;
     text-transform: uppercase; }
+    nav .brand img, nav .brand span {
+      vertical-align: middle; }
     nav .brand span {
       padding-left: 34px; }
     nav .brand:hover {
@@ -7273,10 +7318,10 @@ h1.title {
     transform: scale(1.05); }
 
 .durak-area .store-links {
-  margin-top: 28px; }
+  margin-top: 40px; }
 
 .joker-area .store-links {
-  margin-top: 45px; }
+  margin-top: 62px; }
 
 .durak-area ul, .joker-area ul {
   padding: 0; }
@@ -7361,8 +7406,8 @@ h1.title {
   overflow: hidden; }
 
 .joker-area .container {
-  margin-top: 49px;
-  margin-bottom: 55px;
+  margin-top: 46px;
+  margin-bottom: 51px;
   text-align: center; }
 
 @media (min-width: 768px) {
@@ -7378,7 +7423,7 @@ h1.title {
     background-image: url(../img/joker-sm.png); } }
 
 .joker-area .desc {
-  margin-top: 85px; }
+  margin-top: 79px; }
 
 .joker-area .screen-pic {
   width: 100%;
@@ -7462,10 +7507,15 @@ footer {
     height: 135px;
     background-color: #242732; }
     footer .f-bottom > div:first-child {
-      line-height: 90px;
+      padding-top: 36px;
       font-family: 'Raleway', sans-serif;
       text-transform: uppercase;
       font-weight: 800;
       font-size: 24px; }
+      footer .f-bottom > div:first-child img, footer .f-bottom > div:first-child span {
+        vertical-align: middle; }
+      footer .f-bottom > div:first-child span {
+        padding-left: 30px; }
     footer .f-bottom > div:last-child {
-      font-size: 16px; }
+      font-size: 16px;
+      padding-top: 22px; }
