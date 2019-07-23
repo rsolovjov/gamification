@@ -126,11 +126,11 @@ nav {
   }
 }
 
-h1.title {
+h1 {
   font-weight: 900;
   font-family: "Avenir LT 55 Roman"; 
   margin: 0;
-  margin-top: 24px;
+  padding-top: 24px;
   line-height: 1;
 
   @include media-breakpoint-up(md) { 
