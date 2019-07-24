@@ -7256,7 +7256,18 @@ body {
   font-family: "Avenir Next Cyr";
   font-style: normal;
   line-height: normal;
-  font-size: 16px; }
+  font-size: 16px;
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0.1s; }
+
+@-webkit-keyframes fontfix {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 1; } }
 
 nav {
   height: 80px;
@@ -7279,6 +7290,7 @@ nav {
 
 h1.title {
   font-weight: 900;
+  font-family: "Avenir LT 55 Roman";
   margin: 0;
   display: block; }
   @media (min-width: 768px) {
