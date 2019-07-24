@@ -148,8 +148,8 @@ nav {
 .title {
   font-weight: 900;
   font-family: "Avenir LT 55 Roman"; 
-  margin: 0;
 
+  display: inline;
   @include media-breakpoint-up(md) { 
     font-size: 40px;
     text-align: center;
@@ -221,7 +221,7 @@ nav {
     background: rgba(255,247,234,1);
     background: linear-gradient(to bottom, rgba(255,247,234,1) 0%, rgba(255,224,171,1) 39%, rgba(254,221,164,1) 55%, rgba(247,190,97,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff7ea', endColorstr='#f7be61', GradientType=0 );
-    overflow: hidden;
+    //overflow: hidden;
 
     .container {
       margin-top: 40px;
