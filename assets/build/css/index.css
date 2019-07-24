@@ -7289,6 +7289,7 @@ nav {
       text-decoration: none; }
 
 h1.title {
+  font-weight: bold;
   font-family: "Avenir";
   margin: 0; }
   @media (min-width: 768px) {
