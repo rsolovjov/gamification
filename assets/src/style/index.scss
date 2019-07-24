@@ -96,6 +96,8 @@ body {
   font-size: 16px;
 }
 
+.row:before, .row:after {display: none !important;}
+
 nav {
   height: 80px;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.22);
@@ -147,11 +149,10 @@ nav {
   }
 }
 
-div.title {
+.title {
   font-weight: 900;
   font-family: "Avenir LT 55 Roman"; 
   margin: 0;
-  display: block;
 
   @include media-breakpoint-up(md) { 
     font-size: 40px;

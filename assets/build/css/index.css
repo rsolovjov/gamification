@@ -7258,6 +7258,9 @@ body {
   line-height: normal;
   font-size: 16px; }
 
+.row:before, .row:after {
+  display: none !important; }
+
 nav {
   height: 80px;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.22);
@@ -7294,17 +7297,16 @@ nav {
   .icon-block {
     float: left; } }
 
-div.title {
+.title {
   font-weight: 900;
   font-family: "Avenir LT 55 Roman";
-  margin: 0;
-  display: block; }
+  margin: 0; }
   @media (min-width: 768px) {
-    div.title {
+    .title {
       font-size: 40px;
       text-align: center; } }
   @media (max-width: 767.98px) {
-    div.title {
+    .title {
       font-size: 32px;
       padding-left: 17px; } }
 
