@@ -154,7 +154,7 @@ h1.title {
 }
 
 .title-flex {
-  height: 68px;
+  height: 75px;
 }
 
 .store-link {
@@ -183,13 +183,13 @@ h1.title {
 
 .durak-area {
   .store-links {
-    margin-top: 40px;
+    margin-top: 43px;
   }
 }
 
 .joker-area {
   .store-links {
-    margin-top: 62px;
+    margin-top: 57px;
   }
 }
 
@@ -231,7 +231,7 @@ h1.title {
       }  
   
       @include media-breakpoint-up(md) { 
-        margin-top: 55px;
+        margin-top: 47px;
       }
 
       > div {

@@ -7302,7 +7302,7 @@ h1.title {
       padding-left: 17px; } }
 
 .title-flex {
-  height: 68px; }
+  height: 75px; }
 
 @media (min-width: 1200px) {
   .store-link {
@@ -7325,10 +7325,10 @@ h1.title {
     transform: scale(1.05); }
 
 .durak-area .store-links {
-  margin-top: 40px; }
+  margin-top: 43px; }
 
 .joker-area .store-links {
-  margin-top: 62px; }
+  margin-top: 57px; }
 
 .durak-area ul, .joker-area ul {
   padding: 0; }
@@ -7356,7 +7356,7 @@ h1.title {
         margin-top: 40px; } }
     @media (min-width: 768px) {
       .durak-area .outer-container .screens {
-        margin-top: 55px; } }
+        margin-top: 47px; } }
     .durak-area .outer-container .screens > div {
       position: relative; }
   .durak-area .outer-container .desc {
