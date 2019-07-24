@@ -7280,14 +7280,6 @@ nav {
     nav .brand:hover {
       text-decoration: none; }
 
-.title-block {
-  overflow: hidden; }
-  @media (max-width: 767.98px) {
-    .title-block {
-      max-width: 312px;
-      margin-left: auto;
-      margin-right: auto; } }
-
 @media (min-width: 768px) {
   .icon-block {
     margin-left: auto;
@@ -7296,6 +7288,10 @@ nav {
 @media (max-width: 767.98px) {
   .icon-block {
     float: left; } }
+
+@media (min-width: 768px) {
+  .icon-block {
+    height: 115px; } }
 
 .title {
   font-weight: 900;
@@ -7309,9 +7305,6 @@ nav {
     .title {
       font-size: 32px;
       padding-left: 17px; } }
-
-.title-flex {
-  height: 68px; }
 
 @media (min-width: 1200px) {
   .store-link {
