@@ -138,8 +138,8 @@ nav {
 }
 
 h1.title {
-  font-weight: bold;
-  font-family: "Avenir"; 
+  font-weight: 700;
+  font-family: "Avenir LT 55 Roman"; 
   margin: 0;
 
   @include media-breakpoint-up(md) { 
@@ -354,6 +354,12 @@ h1.title {
     }
   }
   
+  .img-mockup {
+    margin-top: 35px;
+    width: 100%;
+    height: auto;
+  }
+
   .screen {
     position: relative;
     top: 0;
