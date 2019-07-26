@@ -7289,8 +7289,8 @@ nav {
       text-decoration: none; }
 
 h1.title {
-  font-weight: 700;
-  font-family: "Avenir LT 45 Book";
+  font-weight: 600;
+  font-family: "Avenir LT 55 Roman", Avenir-Roman;
   margin: 0; }
   @media (min-width: 768px) {
     h1.title {
