@@ -94,12 +94,6 @@ body {
   font-style: normal;
   line-height: normal;
   font-size: 16px;
-
-  -webkit-animation-duration: 0.1s;
-  -webkit-animation-name: fontfix;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 0.1s;
 }
 
 @-webkit-keyframes fontfix{
@@ -139,7 +133,7 @@ nav {
 
 h1.title {
   font-weight: 600;
-  font-family: "Avenir LT 55 Roman", Avenir-Roman; 
+  font-family: "Avenir Roman"; 
   margin: 0;
 
   @include media-breakpoint-up(md) { 
