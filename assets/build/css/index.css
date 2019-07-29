@@ -7213,10 +7213,8 @@ nav {
     nav .brand:hover {
       text-decoration: none; }
     @media (max-width: 767.98px) {
-      nav .brand {
-        font-size: 18px; }
-        nav .brand span {
-          padding-left: 15px; } }
+      nav .brand span {
+        padding-left: 15px; } }
 
 h1.title {
   font-weight: 500;
