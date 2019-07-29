@@ -111,7 +111,7 @@ nav {
   }
 
   .brand {
-    font-family: "Avenir";
+    font-family: "Avenir Medium";
     color: $black;
     font-size: 24px;
     font-weight: 500;
@@ -141,7 +141,8 @@ nav {
 
 h1.title {
   //font-weight: 600;
-  font-family: "Avenir"; 
+  font-family: "Avenir Heavy"; 
+  //letter-spacing: 0.65px;
   margin: 0;
 
   @include media-breakpoint-up(md) { 
