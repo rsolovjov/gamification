@@ -128,12 +128,20 @@ nav {
     &:hover {
       text-decoration: none;
     }
+
+    @include media-breakpoint-down(sm) { 
+      font-size: 18px;
+
+      span {
+        padding-left: 15px;
+      }
+    }
   }
 }
 
 h1.title {
   font-weight: 600;
-  font-family: "Avenir Roman"; 
+  font-family: "Avenir"; 
   margin: 0;
 
   @include media-breakpoint-up(md) { 
