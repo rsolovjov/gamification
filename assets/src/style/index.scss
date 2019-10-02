@@ -40,6 +40,50 @@
 @import "../../../node_modules/bootstrap/scss/_utilities";
 @import "../../../node_modules/bootstrap/scss/_print";
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 body,
 html {
 	height: 100%;
@@ -52,45 +96,65 @@ body {
   font-size: 16px;
 }
 
+// @-webkit-keyframes fontfix{
+//   from{   opacity: 1; }
+//   to{ opacity: 1; }
+// }
+
 nav {
   height: 80px;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.22);
   font-size: 20px;
+  
+  .contacts-block {
+    width: 68.4%;
+  }
 
   .brand {
-    font-family: "Avenir LT 65";
+    font-family: "Avenir Medium";
     color: $black;
     font-size: 24px;
     font-weight: 500;
     text-transform: uppercase;
+
+    img, span {
+      vertical-align: middle;
+    }
     
+    span {
+      padding-left: 34px;
+    }
+
     &:hover {
       text-decoration: none;
+    }
+
+    @include media-breakpoint-down(sm) { 
+      span {
+        padding-left: 15px;
+      }
     }
   }
 }
 
 h1.title {
-  font-weight: 900;
-  font-family: "Avenir LT 55 Roman"; 
-  margin-top: 10px;
+  font-weight: 500;
+  font-family: "Avenir Heavy"; 
+  margin: 0;
 
   @include media-breakpoint-up(md) { 
     font-size: 40px;
-    line-height: 1.75;
     text-align: center;
   }
+
   @include media-breakpoint-down(sm) { 
     font-size: 32px;
-    line-height: 1.06;
     padding-left: 17px;
   }
 }
 
-.icon-block {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
+.title-flex {
+  height: 75px;
 }
 
 .store-link {
@@ -119,13 +183,13 @@ h1.title {
 
 .durak-area {
   .store-links {
-    margin-top: 25px;
+    margin-top: 43px;
   }
 }
 
 .joker-area {
   .store-links {
-    margin-top: 45px;
+    margin-top: 57px;
   }
 }
 
@@ -136,6 +200,7 @@ h1.title {
     li {
       list-style: none;
       line-height: 30px;
+      font-size: 18px;
 
       span {
         margin-right: 15px;
@@ -157,20 +222,6 @@ h1.title {
     .container {
       margin-top: 40px;
       margin-bottom: 55px;
-      padding: 0;
-    }
-
-    .icon-block {
-      @include media-breakpoint-up(md) { 
-        width: 95px;
-        height: 95px;
-        background-image: url(../img/durak.png)
-      }
-      @include media-breakpoint-down(sm) { 
-        width: 72px;
-        height: 72px;
-        background-image: url(../img/durak-sm.png)
-      }
     }
 
     .screens {
@@ -180,12 +231,16 @@ h1.title {
       }  
   
       @include media-breakpoint-up(md) { 
-        margin-top: 35px;
+        margin-top: 47px;
+      }
+
+      > div {
+        position: relative;
       }
     }
 
     .desc {
-      margin-top: 63px;
+      margin-top: 57px;
     }
 
     .screen-shadow {
@@ -194,6 +249,7 @@ h1.title {
       left: 50%;
       transform: translateX(-50%);    
       width: 100%;
+      bottom: -30px;
 
       &.odd {
         bottom: -54px;
@@ -225,21 +281,8 @@ h1.title {
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);    
-
-        @include media-breakpoint-down(lg) { 
-          width: 102%;
-          height: 105%;
-        }
-
-        @include media-breakpoint-down(md) { 
-          width: 99%;
-          height: 106%;
-        }
-
-        @include media-breakpoint-up(xl) { 
-          width: 102%;
-          height: 105%;
-        }
+        width: 101%;
+        height: 104%;
       }
 
       .img-rounded {
@@ -260,10 +303,9 @@ h1.title {
   }
 
   .container {
-    margin-top: 49px;
-    margin-bottom: 55px;
+    margin-top: 46px;
+    margin-bottom: 51px;
     text-align: center;
-    padding: 0;
   }
 
   .icon-block {
@@ -280,7 +322,7 @@ h1.title {
   }
 
   .desc {
-    margin-top: 85px;
+    margin-top: 75px;
   }
 
   .screen-pic {
@@ -304,11 +346,20 @@ h1.title {
     }  
 
     @include media-breakpoint-up(md) { 
-      margin-top: 82px;
+      margin-top: 106px;
     }
 
+    > div {
+      position: relative;
+    }
   }
   
+  .img-mockup {
+    margin-top: 35px;
+    width: 100%;
+    height: auto;
+  }
+
   .screen {
     position: relative;
     top: 0;
@@ -375,12 +426,8 @@ footer {
     margin-left: auto;
     margin-right: auto;
     height: 100%;
+    list-style: none;
 
-    @include media-breakpoint-up(lg) { 
-      li {
-        list-style: none;
-      }
-    }
     @include media-breakpoint-down(md) { 
       padding-left: 30px;
 
@@ -403,15 +450,24 @@ footer {
     overflow: hidden;
 
     > div:first-child {
-      line-height: 90px;
+      padding-top: 36px;
       font-family: 'Raleway', sans-serif;
       text-transform: uppercase;
       font-weight: 800;
       font-size: 24px;
+
+      img, span {
+        vertical-align: middle;
+      }
+
+      span {
+        padding-left: 30px;
+      }
     }
 
     > div:last-child {
       font-size: 16px;
+      padding-top: 22px;
     }
 
     .font-sm {
