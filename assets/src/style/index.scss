@@ -447,10 +447,9 @@ footer {
   .f-bottom {
     text-align: center;
     background-color: #242732;
-    overflow: hidden;
+    padding-top: 36px;
 
-    > div:first-child {
-      padding-top: 36px;
+    .footer-link {
       font-family: 'Raleway', sans-serif;
       text-transform: uppercase;
       font-weight: 800;

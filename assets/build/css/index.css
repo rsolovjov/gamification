@@ -7444,16 +7444,15 @@ footer {
   footer .f-bottom {
     text-align: center;
     background-color: #242732;
-    overflow: hidden; }
-    footer .f-bottom > div:first-child {
-      padding-top: 36px;
+    padding-top: 36px; }
+    footer .f-bottom .footer-link {
       font-family: 'Raleway', sans-serif;
       text-transform: uppercase;
       font-weight: 800;
       font-size: 24px; }
-      footer .f-bottom > div:first-child img, footer .f-bottom > div:first-child span {
+      footer .f-bottom .footer-link img, footer .f-bottom .footer-link span {
         vertical-align: middle; }
-      footer .f-bottom > div:first-child span {
+      footer .f-bottom .footer-link span {
         padding-left: 30px; }
     footer .f-bottom > div:last-child {
       font-size: 16px;
