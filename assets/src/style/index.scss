@@ -322,6 +322,18 @@ h1.title {
     .img-screen {
       height: auto;
       width: 99%;
+
+      @include media-breakpoint-down(lg) { 
+        width: 90%;
+      }
+
+      @include media-breakpoint-down(md) { 
+        width: 90%;
+      }
+
+      @include media-breakpoint-down(sm) { 
+        width: 70%;
+      }
     }
 
     .mockup {
@@ -331,7 +343,7 @@ h1.title {
       transform: translateX(-50%) translateY(-50%);    
 
       @include media-breakpoint-down(lg) { 
-        width: 112%;
+        width: 115%;
         height: 115%;
       }
 
@@ -341,7 +353,7 @@ h1.title {
       }
 
       @include media-breakpoint-down(sm) { 
-        width: 115%;
+        width: 90%;
         height: 115%;
       }
 
@@ -363,6 +375,12 @@ footer {
     margin-left: auto;
     margin-right: auto;
     height: 100%;
+
+    @include media-breakpoint-up(lg) { 
+      li {
+        list-style: none;
+      }
+    }
     @include media-breakpoint-down(md) { 
       padding-left: 30px;
 
@@ -381,8 +399,8 @@ footer {
 
   .f-bottom {
     text-align: center;
-    height: 135px;
     background-color: #242732;
+    overflow: hidden;
 
     > div:first-child {
       line-height: 90px;
@@ -394,6 +412,16 @@ footer {
 
     > div:last-child {
       font-size: 16px;
+    }
+
+    .font-sm {
+      font-size: 14px;
+    }
+
+    .border-sm-right {
+      @include media-breakpoint-up(sm) {
+        border-right: 1px solid $white;
+      }
     }
   }
 }
