@@ -7136,22 +7136,35 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block; }
 
 body {
   line-height: 1; }
 
-ol, ul {
+ol,
+ul {
   list-style: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none; }
 
 table {
@@ -7186,7 +7199,8 @@ nav {
     font-size: 24px;
     font-weight: 500;
     text-transform: uppercase; }
-    nav .brand img, nav .brand span {
+    nav .brand img,
+    nav .brand span {
       vertical-align: middle; }
     nav .brand span {
       padding-left: 34px; }
@@ -7238,13 +7252,16 @@ h1.title {
 .joker-area .store-links {
   margin-top: 57px; }
 
-.durak-area ul, .joker-area ul {
+.durak-area ul,
+.joker-area ul {
   padding: 0; }
-  .durak-area ul li, .joker-area ul li {
+  .durak-area ul li,
+  .joker-area ul li {
     list-style: none;
     line-height: 30px;
     font-size: 18px; }
-    .durak-area ul li span, .joker-area ul li span {
+    .durak-area ul li span,
+    .joker-area ul li span {
       margin-right: 15px;
       font-size: 24px;
       font-weight: bold; }
@@ -7426,11 +7443,12 @@ footer {
     background-color: #242732;
     padding-top: 36px; }
     footer .f-bottom .footer-link {
-      font-family: 'Raleway', sans-serif;
+      font-family: "Raleway", sans-serif;
       text-transform: uppercase;
       font-weight: 800;
       font-size: 24px; }
-      footer .f-bottom .footer-link img, footer .f-bottom .footer-link span {
+      footer .f-bottom .footer-link img,
+      footer .f-bottom .footer-link span {
         vertical-align: middle; }
       footer .f-bottom .footer-link span {
         padding-left: 30px; }
@@ -7442,3 +7460,11 @@ footer {
     @media (min-width: 576px) {
       footer .f-bottom .border-sm-right {
         border-right: 1px solid #fff; } }
+
+.selection {
+  display: flex;
+  justify-content: flex-end; }
+  .selection__item {
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 1; }

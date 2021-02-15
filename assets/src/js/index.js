@@ -18,3 +18,27 @@
 //= ../../../node_modules/bootstrap/js/dist/tab.js
 //= ../../../node_modules/bootstrap/js/dist/toast.js
 
+$(function () {
+  function changeLang(value) {
+    if (value === "ru") {
+      $('[lang="ru"]').show();
+      $('[lang="en"]').hide();
+    }
+
+    if (value === "en") {
+      $('[lang="ru"]').hide();
+      $('[lang="en"]').show();
+    }
+  }
+
+  var lang = localStorage.getItem("lang") ? localStorage.getItem("lang") : "ru";
+  localStorage.setItem("lang", lang);
+  $("#switch-lang").val(lang);
+  changeLang(lang);
+
+  $("#switch-lang").on("change", function () {
+    var value = $("#switch-lang").val();
+    changeLang(value);
+    localStorage.setItem("lang", value);
+  });
+});
