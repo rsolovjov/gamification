@@ -18,19 +18,19 @@
 //= ../../../node_modules/bootstrap/js/dist/tab.js
 //= ../../../node_modules/bootstrap/js/dist/toast.js
 
-$(function () {
-  function changeLang(value) {
-    if (value === "ru") {
-      $('[lang="ru"]').show();
-      $('[lang="en"]').hide();
-    }
-
-    if (value === "en") {
-      $('[lang="ru"]').hide();
-      $('[lang="en"]').show();
-    }
+function changeLang(value) {
+  if (value === "ru") {
+    $('[lang="ru"]').show();
+    $('[lang="en"]').hide();
   }
 
+  if (value === "en") {
+    $('[lang="ru"]').hide();
+    $('[lang="en"]').show();
+  }
+}
+
+$(function () {
   var lang = localStorage.getItem("lang") ? localStorage.getItem("lang") : "ru";
   localStorage.setItem("lang", lang);
   $("#switch-lang").val(lang);
