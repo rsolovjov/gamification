@@ -18482,27 +18482,24 @@ return Popper;
 }));
 //# sourceMappingURL=toast.js.map
 
-function changeLang(value) {
-  if (value === "ru") {
-    $('[lang="ru"]').show();
-    $('[lang="en"]').hide();
-  }
-
-  if (value === "en") {
-    $('[lang="ru"]').hide();
-    $('[lang="en"]').show();
-  }
-}
-
 $(function () {
-  var lang = localStorage.getItem("lang") ? localStorage.getItem("lang") : "ru";
-  localStorage.setItem("lang", lang);
-  $("#switch-lang").val(lang);
-  changeLang(lang);
-
   $("#switch-lang").on("change", function () {
     var value = $("#switch-lang").val();
-    changeLang(value);
-    localStorage.setItem("lang", value);
+    var domain = window.location.domain;
+    var path = window.location.pathname;
+    var parts = path.split('.');
+    var name = parts[0];
+
+    if (value === "ru" && !name.includes('ru')) {
+      window.location = name + '-ru.html'
+    } else {
+      var nameParts = name.split('-');
+      var index = nameParts.length - 1;
+      nameParts.splice(index, 1);
+
+      var exludeLang = nameParts.join('-');
+      window.location = exludeLang + '.html'
+
+    }
   });
 });
