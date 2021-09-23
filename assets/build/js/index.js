@@ -18499,7 +18499,6 @@ $(function () {
 
       var exludeLang = nameParts.join('-');
       window.location = exludeLang + '.html'
-
     }
   });
 });

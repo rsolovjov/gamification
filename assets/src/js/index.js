@@ -21,7 +21,6 @@
 $(function () {
   $("#switch-lang").on("change", function () {
     var value = $("#switch-lang").val();
-    var domain = window.location.domain;
     var path = window.location.pathname;
     var parts = path.split('.');
     var name = parts[0];
@@ -35,7 +34,6 @@ $(function () {
 
       var exludeLang = nameParts.join('-');
       window.location = exludeLang + '.html'
-
     }
   });
 });
